@@ -1,0 +1,7 @@
+`C/writeln`:=proc(e)
+   global buffer, `C/buffer`;
+   options `Copyright 1993 by Waterloo Maple Software`;
+      if nargs = 1 then `C/write`(e) fi;
+      printf(`%s`,`C/buffer`);
+      `C/buffer`:=``
+   end

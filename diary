@@ -1,0 +1,639 @@
+vst_main
+Warning: Matrix is close to singular or badly scaled.
+         Results may be inaccurate. RCOND = 1.587876e-309.
+(Type "warning off MATLAB:nearlySingularMatrix" to suppress this warning.)
+> In C:\Projects\Software\VSTv2\vst1\pccomp.m at line 27
+  In C:\Projects\Software\VSTv2\vst1\bisurf.m at line 10
+Found corrupted block 5524 in table 2. (invalid table index). (closing the table)
+
+Found corrupted block 5565 in table 2. (invalid table index). 
+
+Found corrupted block 918 in table 8. (invalid table index). (closing the table)
+
+Found corrupted block 931 in table 8. (invalid table index). 
+
+
+Checked all 10 cache memory tables. Found 2 corrupted tables.
+
+------------------------------------------------------------------------
+             Assertion detected at Wed Mar 10 17:38:19 2004
+------------------------------------------------------------------------
+
+Assertion failed: Forced Assertion at line 1160 of file ".\mwmem.c".
+Cache consistency error: Table index out of range
+
+
+Configuration:
+  MATLAB Version:   6.5.0.180913a (R13)
+  Operating System: Microsoft Windows XP
+  Window System:    Version 5.1 (Build 2600: Service Pack 1)
+  Processor ID:     x86 Family 6 Model 9 Stepping 5, GenuineIntel
+  Virtual Machine:  Java 1.3.1_01 with Sun Microsystems Inc. Java HotSpot(TM) Client VM
+    (mixed mode)
+
+Stack Trace:
+  [0] matlab.exe:_mnSignalHandler(0xffffffff, 0, 0, 1) + 592 bytes
+  [1] matlab.exe:void __cdecl ThrowAssertion(void)(0xffffbf1f, 187, 0x65737341, 0x6f697472) + 162 bytes
+  [2] matlab.exe:void __cdecl MATLABAssertFcn(char const *,char const *,int,char const *)(0x7a741708 ": Forced Assertion", 0x7a74100c ".\mwmem.c", 1160, 0x7a741904 "Cache consistency error: Table i..") + 131 bytes
+  [3] libut.dll:_ut_assertstr(0x7a741708 ": Forced Assertion", 0x7a74100c ".\mwmem.c", 1160, 0x7a741904 "Cache consistency error: Table i..") + 25 bytes
+  [4] libut.dll:_mw_free(0x013f65a0, 2, 0x0a874260, 0x00df6b8c "®kﬂ") + 218 bytes
+  [5] libut.dll:_utFree(0x013f65a0, 0x0a874260, 0x0a874260, 0x00df6ba8 "ºkﬂ") + 25 bytes
+  [6] libmx.dll:_mxDestroyArrayContents(0x0a874260, 0x0a874260, 0xffffffcf, 0x0a874260) + 209 bytes
+  [7] libmx.dll:_mxMoveArrayOntoHeader(0x0a874260, 0, 1, 0x00df6e5c "¸nﬂ") + 125 bytes
+  [8] m_interpreter.dll:_inMatass1(0x0a874260, 0x0a873c78, 0xffffffcf, 1) + 29 bytes
+  [9] m_interpreter.dll:_inMatAssDispatch(39, 0xffffffcf, 1, 0x00df6fbc) + 183 bytes
+  [10] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(1, 26, 0, 0x01323f10) + 4423 bytes
+  [11] m_interpreter.dll:_inInterPcode(1, 0x00df7090, 0, 0x1adab510) + 193 bytes
+  [12] m_interpreter.dll:_inExecCompScript(0x1adab510, 0x1adab510, 0x00df769c, 0x00df7968) + 991 bytes
+  [13] m_interpreter.dll:bool __cdecl inRunMP(int,struct mxArray_tag * *,int,struct mxArray_tag * *,struct word *,bool)(0, 0x00df769c, 0, 0x00df79a4) + 106 bytes
+  [14] m_interpreter.dll:void __cdecl inExecMFile(int,int,struct mxArray_tag * * const,struct MATLAB_Function_tag *)(0, 0, 0x00df79a4, 0x1adab510) + 70 bytes
+  [15] m_interpreter.dll:_inExecFunction(0, 0, 0x00df79a4, 0x1adab510) + 38 bytes
+  [16] m_interpreter.dll:_inMMexExecute(586, 0x1adab510, 0, 0) + 533 bytes
+  [17] m_interpreter.dll:_inCallFcnFromReference(0x00df7d00, 0x7a74466c "†gB", 0x1ad73d28, 0x66666666) + 213 bytes
+  [18] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(1, 10, 0, 0x013275d0) + 4242 bytes
+  [19] m_interpreter.dll:_inInterPcode(1, 0x00df7dd4, 0, 0x1ad73d28) + 193 bytes
+  [20] m_interpreter.dll:_inExecCompScript(0x1ad73d28, 0x1ad73d28, 0x00df83e0, 0x00df86ac) + 991 bytes
+  [21] m_interpreter.dll:bool __cdecl inRunMP(int,struct mxArray_tag * *,int,struct mxArray_tag * *,struct word *,bool)(0, 0x00df83e0, 0, 0x00df86e8) + 106 bytes
+  [22] m_interpreter.dll:void __cdecl inExecMFile(int,int,struct mxArray_tag * * const,struct MATLAB_Function_tag *)(0, 0, 0x00df86e8, 0x1ad73d28) + 70 bytes
+  [23] m_interpreter.dll:_inExecFunction(0, 0, 0x00df86e8, 0x1ad73d28) + 38 bytes
+  [24] m_interpreter.dll:_inMMexExecute(582, 0x1ad73d28, 0, 0) + 533 bytes
+  [25] m_interpreter.dll:enum opcodes __cdecl inMMex(char const *,int,int,int,int *,int *)(0x0a8438cc "bisurf", 582, 0, 0) + 94 bytes
+  [26] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(0, 0, 0, 0x01333960) + 2143 bytes
+  [27] m_interpreter.dll:_inInterPcode(0, 0x00df8c68, 0, 0) + 193 bytes
+  [28] m_interpreter.dll:enum inExecutionStatus __cdecl in_local_call_eval_function(int *,struct _m_parser_interface *,struct _pcodeheader *,int *,struct mxArray_tag * * const,enum inDebugCheck)(0, 0x7a87fa78, 0x00df8c68, 0x00df8d0c) + 174 bytes
+  [29] m_interpreter.dll:_inEvalStringWithIsVarFcn(0x0129e250 "bisurf\n", 6, 0, 0) + 531 bytes
+  [30] m_interpreter.dll:_inEvalString(0x0129e250 "bisurf\n", 6, 0, 0) + 50 bytes
+  [31] m_interpreter.dll:_inFullEvalFcn(0, 0x00df8d98, 1, 0x00df8e60) + 264 bytes
+  [32] m_interpreter.dll:_inExecuteInternalFcn(350, 1, 0, 0) + 1183 bytes
+  [33] m_interpreter.dll:enum opcodes __cdecl inIntFcn(enum opcodes,int,int,int)(77, 0x0100015e, 0, 1) + 90 bytes
+  [34] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(0, 0, 0, 0x01323340) + 2554 bytes
+  [35] m_interpreter.dll:_inInterPcode(0, 0x00df95d8, 0, 0) + 193 bytes
+  [36] m_interpreter.dll:enum inExecutionStatus __cdecl in_local_call_eval_function(int *,struct _m_parser_interface *,struct _pcodeheader *,int *,struct mxArray_tag * * const,enum inDebugCheck)(0, 0x7a87fa78, 0x00df95d8, 0x00df967c) + 174 bytes
+  [37] m_interpreter.dll:_inEvalStringWithIsVarFcn(0x013311d0 "eval(LF_Alg)", 12, 0, 0) + 531 bytes
+  [38] m_interpreter.dll:_inEvalString(0x013311d0 "eval(LF_Alg)", 12, 0, 0) + 50 bytes
+  [39] m_interpreter.dll:_inEvalExpInWS(0x013311d0 "eval(LF_Alg)", 0, 0, 0x00df985c) + 106 bytes
+  [40] gui.dll:public: bool __thiscall MCallback::execute(struct mxArray_tag *,struct mxArray_tag *)const (0x0a84e490, 0x0a8467f8, 0x00df98b4 "‰òﬂ", 0x7a09853f) + 815 bytes
+  [41] gui.dll:_ExecuteMCallback(0x013f03d0, 0x0a84e490, 0x0a8467f8, 0) + 19 bytes
+  [42] hg.dll:enum inExecutionStatus __cdecl goCallEventCallback(struct GObject_tag *,class MCallback *,char const *,void (__cdecl*)(struct GObject_tag *,void *),void *,void (__cdecl*)(struct GObject_tag *,void *))(0x00d292e0, 4, 0x7a0c3ae0 "Callback", 0x013f03d0) + 319 bytes
+  [43] hg.dll:_goCallCallback(0x1ad292e0, 0x013f03d0, 0x7a0c3ae0 "Callback", 0x7a08a2e0) + 118 bytes
+  [44] hg.dll:_goControlActivated(0x1ad292e0, 1836048, 0x0a867ea0, 0x00df9c5c) + 99 bytes
+  [45] uiw.dll:struct GObject_tag * __cdecl activate_control(struct HWND__ *,struct winSysControlData_tag *)(1836048, 0x0a867ea0, 2, 0x01462f48) + 159 bytes
+  [46] uiw.dll:void __cdecl ImageButtonPushed(struct HWND__ *)(1836048, 1836048, 0x01462f48, 0) + 77 bytes
+  [47] uiw.dll:long __stdcall ImageButtonHandler(struct HWND__ *,unsigned int,unsigned int,long)(1836048, 2, 0, 0) + 111 bytes
+  [48] uiw.dll:_ImageButtonProc@16(1836048, 514, 0, 786449) + 2439 bytes
+  [49] USER32.dll:0x77d43a50(0x7a50fb10, 1836048, 514, 0)
+  [50] USER32.dll:0x77d43b1f(0, 0x7a50fb10, 1836048, 514)
+  [51] USER32.dll:0x77d43d79(0x00df9c18, 1, 0x7a514560, 0x00df9c18)
+  [52] USER32.dll:0x77d44374(0x00df9c18, 0x00df9cf0 "†gB", 0x1abe7060, 0x1abe7060)
+  [53] uiw.dll:_getCommand(0x1abe7098, 4096, 255, 0x1ac86b90) + 564 bytes
+  [54] matlab.exe:_ioReadLine(255, 0x77c5ac80 "`◊≈w", 0x1ac86b90, 4096) + 302 bytes
+  [55] matlab.exe:void __cdecl mnGetFullLine(char * *,unsigned int *,unsigned int *,int)(0x00dfdd5c, 0x00dfdd58, 0x00dfdd54, 255) + 55 bytes
+  [56] matlab.exe:_mnGetCommandLineBuffer(255, 0, 0, 1) + 95 bytes
+  [57] matlab.exe:_mnParser(0x70a9f1ab, 271244, 0, 48) + 955 bytes
+  [58] matlab.exe:_WinMain@16(0x00400000 "MZê", 0, 271244, 1) + 3872 bytes
+  [59] matlab.exe:_WinMainCRTStartup(0x70a9f1ab, 0x80000002, 0x7ffdf000, 0xf09eecf0) + 308 bytes
+  [60] kernel32.dll:0x77e814c7(0x0047172c, 0, 0, 1245343)
+
+Please follow these steps in reporting this problem to The MathWorks so
+that we have the best chance of correcting it:
+
+  1. Send this crash report to segv@mathworks.com for automated analysis.
+     For your convenience, this information has been recorded in:
+       C:\DOCUME~1\Harry\LOCALS~1\Temp\matlab_crash_dump.3636
+
+  2. Also, if the problem is reproducible, send the crash report to
+     support@mathworks.com along with:
+       - A specific list of steps that will reproduce the problem
+       - Any M, MEX, MDL or other files required to reproduce the problem
+       - Any error messages displayed prior to this crash report
+     A technical support engineer will contact you with further information.
+
+Thank you for your assistance.  Please save your workspace and restart
+MATLAB before continuing your work.
+
+Error in ==> C:\Projects\Software\VSTv2\vst1\pccomp.m
+On line 26  ==>             [f,J]=eval([CurrentSystem,'(data,x,[0;param],v)']);
+
+Found corrupted block 5524 in table 2. (invalid table index). 
+
+Found corrupted block 5565 in table 2. (invalid table index). 
+
+Found corrupted block 918 in table 8. (invalid table index). 
+
+Found corrupted block 931 in table 8. (invalid table index). 
+
+
+Checked all 14 cache memory tables. Found 2 corrupted tables.
+
+------------------------------------------------------------------------
+             Assertion detected at Wed Mar 10 17:38:19 2004
+------------------------------------------------------------------------
+
+Assertion failed: Forced Assertion at line 1160 of file ".\mwmem.c".
+Cache consistency error: Table index out of range
+
+
+Configuration:
+  MATLAB Version:   6.5.0.180913a (R13)
+  Operating System: Microsoft Windows XP
+  Window System:    Version 5.1 (Build 2600: Service Pack 1)
+  Processor ID:     x86 Family 6 Model 9 Stepping 5, GenuineIntel
+  Virtual Machine:  Java 1.3.1_01 with Sun Microsystems Inc. Java HotSpot(TM) Client VM
+    (mixed mode)
+
+Stack Trace:
+  [0] matlab.exe:_mnSignalHandler(0xffffffff, 0, 0, 1) + 592 bytes
+  [1] matlab.exe:void __cdecl ThrowAssertion(void)(0xffffadd1, 187, 0x65737341, 0x6f697472) + 162 bytes
+  [2] matlab.exe:void __cdecl MATLABAssertFcn(char const *,char const *,int,char const *)(0x7a741708 ": Forced Assertion", 0x7a74100c ".\mwmem.c", 1160, 0x7a741904 "Cache consistency error: Table i..") + 131 bytes
+  [3] libut.dll:_ut_assertstr(0x7a741708 ": Forced Assertion", 0x7a74100c ".\mwmem.c", 1160, 0x7a741904 "Cache consistency error: Table i..") + 25 bytes
+  [4] libut.dll:_mw_free(0x1adae690, 2, 0x0a873960, 0x00df6f8c "úoﬂ") + 218 bytes
+  [5] libut.dll:_utFree(0x1adae690, 0, 0x0a873960, 0x00df6f9c "¥oﬂ") + 25 bytes
+  [6] libmx.dll:_mxDestroyArrayContents(0x0a873960, 0x0a6efe4c, 0x00df6fb4 "–oﬂ", 0x7b128d6e) + 209 bytes
+  [7] libmx.dll:_mxDestroyArray(0x0a873960, 0x7a74466c "†gB", 500, 0x1adab510) + 50 bytes
+  [8] libmx.dll:_ExitArrayListContextFcn(2, 0, 0, 0) + 94 bytes
+  [9] libmx.dll:_mxExitArrayListContext(2, 0, 0, 0x01403001) + 26 bytes
+  [10] m_interpreter.dll:_inExecCompScript(0x1adab510, 0x1adab510, 0x00df769c, 0x00df7968) + 1148 bytes
+  [11] m_interpreter.dll:bool __cdecl inRunMP(int,struct mxArray_tag * *,int,struct mxArray_tag * *,struct word *,bool)(0, 0x00df769c, 0, 0x00df79a4) + 106 bytes
+  [12] m_interpreter.dll:void __cdecl inExecMFile(int,int,struct mxArray_tag * * const,struct MATLAB_Function_tag *)(0, 0, 0x00df79a4, 0x1adab510) + 70 bytes
+  [13] m_interpreter.dll:_inExecFunction(0, 0, 0x00df79a4, 0x1adab510) + 38 bytes
+  [14] m_interpreter.dll:_inMMexExecute(586, 0x1adab510, 0, 0) + 533 bytes
+  [15] m_interpreter.dll:_inCallFcnFromReference(0x00df7d00, 0x7a74466c "†gB", 0x1ad73d28, 0x66666666) + 213 bytes
+  [16] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(1, 10, 0, 0x013275d0) + 4242 bytes
+  [17] m_interpreter.dll:_inInterPcode(1, 0x00df7dd4, 0, 0x1ad73d28) + 193 bytes
+  [18] m_interpreter.dll:_inExecCompScript(0x1ad73d28, 0x1ad73d28, 0x00df83e0, 0x00df86ac) + 991 bytes
+  [19] m_interpreter.dll:bool __cdecl inRunMP(int,struct mxArray_tag * *,int,struct mxArray_tag * *,struct word *,bool)(0, 0x00df83e0, 0, 0x00df86e8) + 106 bytes
+  [20] m_interpreter.dll:void __cdecl inExecMFile(int,int,struct mxArray_tag * * const,struct MATLAB_Function_tag *)(0, 0, 0x00df86e8, 0x1ad73d28) + 70 bytes
+  [21] m_interpreter.dll:_inExecFunction(0, 0, 0x00df86e8, 0x1ad73d28) + 38 bytes
+  [22] m_interpreter.dll:_inMMexExecute(582, 0x1ad73d28, 0, 0) + 533 bytes
+  [23] m_interpreter.dll:enum opcodes __cdecl inMMex(char const *,int,int,int,int *,int *)(0x0a8438cc "bisurf", 582, 0, 0) + 94 bytes
+  [24] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(0, 0, 0, 0x01333960) + 2143 bytes
+  [25] m_interpreter.dll:_inInterPcode(0, 0x00df8c68, 0, 0) + 193 bytes
+  [26] m_interpreter.dll:enum inExecutionStatus __cdecl in_local_call_eval_function(int *,struct _m_parser_interface *,struct _pcodeheader *,int *,struct mxArray_tag * * const,enum inDebugCheck)(0, 0x7a87fa78, 0x00df8c68, 0x00df8d0c) + 174 bytes
+  [27] m_interpreter.dll:_inEvalStringWithIsVarFcn(0x0129e250 "bisurf\n", 6, 0, 0) + 531 bytes
+  [28] m_interpreter.dll:_inEvalString(0x0129e250 "bisurf\n", 6, 0, 0) + 50 bytes
+  [29] m_interpreter.dll:_inFullEvalFcn(0, 0x00df8d98, 1, 0x00df8e60) + 264 bytes
+  [30] m_interpreter.dll:_inExecuteInternalFcn(350, 1, 0, 0) + 1183 bytes
+  [31] m_interpreter.dll:enum opcodes __cdecl inIntFcn(enum opcodes,int,int,int)(77, 0x0100015e, 0, 1) + 90 bytes
+  [32] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(0, 0, 0, 0x01323340) + 2554 bytes
+  [33] m_interpreter.dll:_inInterPcode(0, 0x00df95d8, 0, 0) + 193 bytes
+  [34] m_interpreter.dll:enum inExecutionStatus __cdecl in_local_call_eval_function(int *,struct _m_parser_interface *,struct _pcodeheader *,int *,struct mxArray_tag * * const,enum inDebugCheck)(0, 0x7a87fa78, 0x00df95d8, 0x00df967c) + 174 bytes
+  [35] m_interpreter.dll:_inEvalStringWithIsVarFcn(0x013311d0 "eval(LF_Alg)", 12, 0, 0) + 531 bytes
+  [36] m_interpreter.dll:_inEvalString(0x013311d0 "eval(LF_Alg)", 12, 0, 0) + 50 bytes
+  [37] m_interpreter.dll:_inEvalExpInWS(0x013311d0 "eval(LF_Alg)", 0, 0, 0x00df985c) + 106 bytes
+  [38] gui.dll:public: bool __thiscall MCallback::execute(struct mxArray_tag *,struct mxArray_tag *)const (0x0a84e490, 0x0a8467f8, 0x00df98b4 "‰òﬂ", 0x7a09853f) + 815 bytes
+  [39] gui.dll:_ExecuteMCallback(0x013f03d0, 0x0a84e490, 0x0a8467f8, 0) + 19 bytes
+  [40] hg.dll:enum inExecutionStatus __cdecl goCallEventCallback(struct GObject_tag *,class MCallback *,char const *,void (__cdecl*)(struct GObject_tag *,void *),void *,void (__cdecl*)(struct GObject_tag *,void *))(0x00d292e0, 4, 0x7a0c3ae0 "Callback", 0x013f03d0) + 319 bytes
+  [41] hg.dll:_goCallCallback(0x1ad292e0, 0x013f03d0, 0x7a0c3ae0 "Callback", 0x7a08a2e0) + 118 bytes
+  [42] hg.dll:_goControlActivated(0x1ad292e0, 1836048, 0x0a867ea0, 0x00df9c5c) + 99 bytes
+  [43] uiw.dll:struct GObject_tag * __cdecl activate_control(struct HWND__ *,struct winSysControlData_tag *)(1836048, 0x0a867ea0, 2, 0x01462f48) + 159 bytes
+  [44] uiw.dll:void __cdecl ImageButtonPushed(struct HWND__ *)(1836048, 1836048, 0x01462f48, 0) + 77 bytes
+  [45] uiw.dll:long __stdcall ImageButtonHandler(struct HWND__ *,unsigned int,unsigned int,long)(1836048, 2, 0, 0) + 111 bytes
+  [46] uiw.dll:_ImageButtonProc@16(1836048, 514, 0, 786449) + 2439 bytes
+  [47] USER32.dll:0x77d43a50(0x7a50fb10, 1836048, 514, 0)
+  [48] USER32.dll:0x77d43b1f(0, 0x7a50fb10, 1836048, 514)
+  [49] USER32.dll:0x77d43d79(0x00df9c18, 1, 0x7a514560, 0x00df9c18)
+  [50] USER32.dll:0x77d44374(0x00df9c18, 0x00df9cf0 "†gB", 0x1abe7060, 0x1abe7060)
+  [51] uiw.dll:_getCommand(0x1abe7098, 4096, 255, 0x1ac86b90) + 564 bytes
+  [52] matlab.exe:_ioReadLine(255, 0x77c5ac80 "`◊≈w", 0x1ac86b90, 4096) + 302 bytes
+  [53] matlab.exe:void __cdecl mnGetFullLine(char * *,unsigned int *,unsigned int *,int)(0x00dfdd5c, 0x00dfdd58, 0x00dfdd54, 255) + 55 bytes
+  [54] matlab.exe:_mnGetCommandLineBuffer(255, 0, 0, 1) + 95 bytes
+  [55] matlab.exe:_mnParser(0x70a9f1ab, 271244, 0, 48) + 955 bytes
+  [56] matlab.exe:_WinMain@16(0x00400000 "MZê", 0, 271244, 1) + 3872 bytes
+  [57] matlab.exe:_WinMainCRTStartup(0x70a9f1ab, 0x80000002, 0x7ffdf000, 0xf09eecf0) + 308 bytes
+  [58] kernel32.dll:0x77e814c7(0x0047172c, 0, 0, 1245343)
+
+Please follow these steps in reporting this problem to The MathWorks so
+that we have the best chance of correcting it:
+
+  1. Send this crash report to segv@mathworks.com for automated analysis.
+     For your convenience, this information has been recorded in:
+       C:\DOCUME~1\Harry\LOCALS~1\Temp\matlab_crash_dump.3636
+
+  2. Also, if the problem is reproducible, send the crash report to
+     support@mathworks.com along with:
+       - A specific list of steps that will reproduce the problem
+       - Any M, MEX, MDL or other files required to reproduce the problem
+       - Any error messages displayed prior to this crash report
+     A technical support engineer will contact you with further information.
+
+Thank you for your assistance.  Please save your workspace and restart
+MATLAB before continuing your work.
+
+Error in ==> C:\Projects\Software\VSTv2\vst1\bisurf.m
+On line 26  ==> 
+
+Found corrupted block 5524 in table 2. (invalid table index). 
+
+Found corrupted block 5565 in table 2. (invalid table index). 
+
+Found corrupted block 918 in table 8. (invalid table index). 
+
+Found corrupted block 931 in table 8. (invalid table index). 
+
+
+Checked all 14 cache memory tables. Found 2 corrupted tables.
+
+------------------------------------------------------------------------
+             Assertion detected at Wed Mar 10 17:38:19 2004
+------------------------------------------------------------------------
+
+Assertion failed: Forced Assertion at line 1160 of file ".\mwmem.c".
+Cache consistency error: Table index out of range
+
+
+Configuration:
+  MATLAB Version:   6.5.0.180913a (R13)
+  Operating System: Microsoft Windows XP
+  Window System:    Version 5.1 (Build 2600: Service Pack 1)
+  Processor ID:     x86 Family 6 Model 9 Stepping 5, GenuineIntel
+  Virtual Machine:  Java 1.3.1_01 with Sun Microsystems Inc. Java HotSpot(TM) Client VM
+    (mixed mode)
+
+Stack Trace:
+  [0] matlab.exe:_mnSignalHandler(0xffffffff, 0, 0, 1) + 592 bytes
+  [1] matlab.exe:void __cdecl ThrowAssertion(void)(25034, 187, 0x65737341, 0x6f697472) + 162 bytes
+  [2] matlab.exe:void __cdecl MATLABAssertFcn(char const *,char const *,int,char const *)(0x7a741708 ": Forced Assertion", 0x7a74100c ".\mwmem.c", 1160, 0x7a741904 "Cache consistency error: Table i..") + 131 bytes
+  [3] libut.dll:_ut_assertstr(0x7a741708 ": Forced Assertion", 0x7a74100c ".\mwmem.c", 1160, 0x7a741904 "Cache consistency error: Table i..") + 25 bytes
+  [4] libut.dll:_mw_free(0x013f5f38, 2, 0x0a873c78, 0x00df7cd0 "‡|ﬂ") + 218 bytes
+  [5] libut.dll:_utFree(0x013f5f38, 0, 0x0a873c78, 0x00df7ce0 "¯|ﬂ") + 25 bytes
+  [6] libmx.dll:_mxDestroyArrayContents(0x0a873c78, 0x0a6efe48, 0x00df7cf8, 0x7b128d6e) + 209 bytes
+  [7] libmx.dll:_mxDestroyArray(0x0a873c78, 0x7a74466c "†gB", 500, 0x1ad73d28) + 50 bytes
+  [8] libmx.dll:_ExitArrayListContextFcn(2, 0, 0, 0) + 94 bytes
+  [9] libmx.dll:_mxExitArrayListContext(2, 0, 0, 0x01403001) + 26 bytes
+  [10] m_interpreter.dll:_inExecCompScript(0x1ad73d28, 0x1ad73d28, 0x00df83e0, 0x00df86ac) + 1148 bytes
+  [11] m_interpreter.dll:bool __cdecl inRunMP(int,struct mxArray_tag * *,int,struct mxArray_tag * *,struct word *,bool)(0, 0x00df83e0, 0, 0x00df86e8) + 106 bytes
+  [12] m_interpreter.dll:void __cdecl inExecMFile(int,int,struct mxArray_tag * * const,struct MATLAB_Function_tag *)(0, 0, 0x00df86e8, 0x1ad73d28) + 70 bytes
+  [13] m_interpreter.dll:_inExecFunction(0, 0, 0x00df86e8, 0x1ad73d28) + 38 bytes
+  [14] m_interpreter.dll:_inMMexExecute(582, 0x1ad73d28, 0, 0) + 533 bytes
+  [15] m_interpreter.dll:enum opcodes __cdecl inMMex(char const *,int,int,int,int *,int *)(0x0a8438cc "bisurf", 582, 0, 0) + 94 bytes
+  [16] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(0, 0, 0, 0x01333960) + 2143 bytes
+  [17] m_interpreter.dll:_inInterPcode(0, 0x00df8c68, 0, 0) + 193 bytes
+  [18] m_interpreter.dll:enum inExecutionStatus __cdecl in_local_call_eval_function(int *,struct _m_parser_interface *,struct _pcodeheader *,int *,struct mxArray_tag * * const,enum inDebugCheck)(0, 0x7a87fa78, 0x00df8c68, 0x00df8d0c) + 174 bytes
+  [19] m_interpreter.dll:_inEvalStringWithIsVarFcn(0x0129e250 "bisurf\n", 6, 0, 0) + 531 bytes
+  [20] m_interpreter.dll:_inEvalString(0x0129e250 "bisurf\n", 6, 0, 0) + 50 bytes
+  [21] m_interpreter.dll:_inFullEvalFcn(0, 0x00df8d98, 1, 0x00df8e60) + 264 bytes
+  [22] m_interpreter.dll:_inExecuteInternalFcn(350, 1, 0, 0) + 1183 bytes
+  [23] m_interpreter.dll:enum opcodes __cdecl inIntFcn(enum opcodes,int,int,int)(77, 0x0100015e, 0, 1) + 90 bytes
+  [24] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(0, 0, 0, 0x01323340) + 2554 bytes
+  [25] m_interpreter.dll:_inInterPcode(0, 0x00df95d8, 0, 0) + 193 bytes
+  [26] m_interpreter.dll:enum inExecutionStatus __cdecl in_local_call_eval_function(int *,struct _m_parser_interface *,struct _pcodeheader *,int *,struct mxArray_tag * * const,enum inDebugCheck)(0, 0x7a87fa78, 0x00df95d8, 0x00df967c) + 174 bytes
+  [27] m_interpreter.dll:_inEvalStringWithIsVarFcn(0x013311d0 "eval(LF_Alg)", 12, 0, 0) + 531 bytes
+  [28] m_interpreter.dll:_inEvalString(0x013311d0 "eval(LF_Alg)", 12, 0, 0) + 50 bytes
+  [29] m_interpreter.dll:_inEvalExpInWS(0x013311d0 "eval(LF_Alg)", 0, 0, 0x00df985c) + 106 bytes
+  [30] gui.dll:public: bool __thiscall MCallback::execute(struct mxArray_tag *,struct mxArray_tag *)const (0x0a84e490, 0x0a8467f8, 0x00df98b4 "‰òﬂ", 0x7a09853f) + 815 bytes
+  [31] gui.dll:_ExecuteMCallback(0x013f03d0, 0x0a84e490, 0x0a8467f8, 0) + 19 bytes
+  [32] hg.dll:enum inExecutionStatus __cdecl goCallEventCallback(struct GObject_tag *,class MCallback *,char const *,void (__cdecl*)(struct GObject_tag *,void *),void *,void (__cdecl*)(struct GObject_tag *,void *))(0x00d292e0, 4, 0x7a0c3ae0 "Callback", 0x013f03d0) + 319 bytes
+  [33] hg.dll:_goCallCallback(0x1ad292e0, 0x013f03d0, 0x7a0c3ae0 "Callback", 0x7a08a2e0) + 118 bytes
+  [34] hg.dll:_goControlActivated(0x1ad292e0, 1836048, 0x0a867ea0, 0x00df9c5c) + 99 bytes
+  [35] uiw.dll:struct GObject_tag * __cdecl activate_control(struct HWND__ *,struct winSysControlData_tag *)(1836048, 0x0a867ea0, 2, 0x01462f48) + 159 bytes
+  [36] uiw.dll:void __cdecl ImageButtonPushed(struct HWND__ *)(1836048, 1836048, 0x01462f48, 0) + 77 bytes
+  [37] uiw.dll:long __stdcall ImageButtonHandler(struct HWND__ *,unsigned int,unsigned int,long)(1836048, 2, 0, 0) + 111 bytes
+  [38] uiw.dll:_ImageButtonProc@16(1836048, 514, 0, 786449) + 2439 bytes
+  [39] USER32.dll:0x77d43a50(0x7a50fb10, 1836048, 514, 0)
+  [40] USER32.dll:0x77d43b1f(0, 0x7a50fb10, 1836048, 514)
+  [41] USER32.dll:0x77d43d79(0x00df9c18, 1, 0x7a514560, 0x00df9c18)
+  [42] USER32.dll:0x77d44374(0x00df9c18, 0x00df9cf0 "†gB", 0x1abe7060, 0x1abe7060)
+  [43] uiw.dll:_getCommand(0x1abe7098, 4096, 255, 0x1ac86b90) + 564 bytes
+  [44] matlab.exe:_ioReadLine(255, 0x77c5ac80 "`◊≈w", 0x1ac86b90, 4096) + 302 bytes
+  [45] matlab.exe:void __cdecl mnGetFullLine(char * *,unsigned int *,unsigned int *,int)(0x00dfdd5c, 0x00dfdd58, 0x00dfdd54, 255) + 55 bytes
+  [46] matlab.exe:_mnGetCommandLineBuffer(255, 0, 0, 1) + 95 bytes
+  [47] matlab.exe:_mnParser(0x70a9f1ab, 271244, 0, 48) + 955 bytes
+  [48] matlab.exe:_WinMain@16(0x00400000 "MZê", 0, 271244, 1) + 3872 bytes
+  [49] matlab.exe:_WinMainCRTStartup(0x70a9f1ab, 0x80000002, 0x7ffdf000, 0xf09eecf0) + 308 bytes
+  [50] kernel32.dll:0x77e814c7(0x0047172c, 0, 0, 1245343)
+
+Please follow these steps in reporting this problem to The MathWorks so
+that we have the best chance of correcting it:
+
+  1. Send this crash report to segv@mathworks.com for automated analysis.
+     For your convenience, this information has been recorded in:
+       C:\DOCUME~1\Harry\LOCALS~1\Temp\matlab_crash_dump.3636
+
+  2. Also, if the problem is reproducible, send the crash report to
+     support@mathworks.com along with:
+       - A specific list of steps that will reproduce the problem
+       - Any M, MEX, MDL or other files required to reproduce the problem
+       - Any error messages displayed prior to this crash report
+     A technical support engineer will contact you with further information.
+
+Thank you for your assistance.  Please save your workspace and restart
+MATLvst_main
+Warning: Matrix is close to singular or badly scaled.
+         Results may be inaccurate. RCOND = 1.586166e-309.
+(Type "warning off MATLAB:nearlySingularMatrix" to suppress this warning.)
+> In C:\Projects\Software\VSTv2\vst1\pccomp.m at line 27
+  In C:\Projects\Software\VSTv2\vst1\bisurf.m at line 10
+Found corrupted block 5524 in table 2. (invalid table index). (closing the table)
+
+Found corrupted block 5565 in table 2. (invalid table index). 
+
+Found corrupted block 918 in table 8. (invalid table index). (closing the table)
+
+Found corrupted block 931 in table 8. (invalid table index). 
+
+
+Checked all 10 cache memory tables. Found 2 corrupted tables.
+
+------------------------------------------------------------------------
+             Assertion detected at Wed Mar 10 18:10:39 2004
+------------------------------------------------------------------------
+
+Assertion failed: Forced Assertion at line 1160 of file ".\mwmem.c".
+Cache consistency error: Table index out of range
+
+
+Configuration:
+  MATLAB Version:   6.5.0.180913a (R13)
+  Operating System: Microsoft Windows XP
+  Window System:    Version 5.1 (Build 2600: Service Pack 1)
+  Processor ID:     x86 Family 6 Model 9 Stepping 5, GenuineIntel
+  Virtual Machine:  Java 1.3.1_01 with Sun Microsystems Inc. Java HotSpot(TM) Client VM
+    (mixed mode)
+
+Stack Trace:
+  [0] matlab.exe:_mnSignalHandler(0xffffffff, 0, 0, 1) + 592 bytes
+  [1] matlab.exe:void __cdecl ThrowAssertion(void)(23282, 102, 0x65737341, 0x6f697472) + 162 bytes
+  [2] matlab.exe:void __cdecl MATLABAssertFcn(char const *,char const *,int,char const *)(0x7a741708 ": Forced Assertion", 0x7a74100c ".\mwmem.c", 1160, 0x7a741904 "Cache consistency error: Table i..") + 131 bytes
+  [3] libut.dll:_ut_assertstr(0x7a741708 ": Forced Assertion", 0x7a74100c ".\mwmem.c", 1160, 0x7a741904 "Cache consistency error: Table i..") + 25 bytes
+  [4] libut.dll:_mw_free(0x013f65a0, 2, 0x1acc5220, 0x00df6b8c "®kﬂ") + 218 bytes
+  [5] libut.dll:_utFree(0x013f65a0, 0x1acc5220, 0x1acc5220, 0x00df6ba8 "ºkﬂ") + 25 bytes
+  [6] libmx.dll:_mxDestroyArrayContents(0x1acc5220, 0x1acc5220, 0xffffffcf, 0x1acc5220) + 209 bytes
+  [7] libmx.dll:_mxMoveArrayOntoHeader(0x1acc5220, 0, 1, 0x00df6e5c "¸nﬂ") + 125 bytes
+  [8] m_interpreter.dll:_inMatass1(0x1acc5220, 0x1acc4c38, 0xffffffcf, 1) + 29 bytes
+  [9] m_interpreter.dll:_inMatAssDispatch(39, 0xffffffcf, 1, 0x00df6fbc) + 183 bytes
+  [10] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(1, 26, 0, 0x01323ef8) + 4423 bytes
+  [11] m_interpreter.dll:_inInterPcode(1, 0x00df7090, 0, 0x1abcad90) + 193 bytes
+  [12] m_interpreter.dll:_inExecCompScript(0x1abcad90, 0x1abcad90, 0x00df769c, 0x00df7968) + 991 bytes
+  [13] m_interpreter.dll:bool __cdecl inRunMP(int,struct mxArray_tag * *,int,struct mxArray_tag * *,struct word *,bool)(0, 0x00df769c, 0, 0x00df79a4) + 106 bytes
+  [14] m_interpreter.dll:void __cdecl inExecMFile(int,int,struct mxArray_tag * * const,struct MATLAB_Function_tag *)(0, 0, 0x00df79a4, 0x1abcad90) + 70 bytes
+  [15] m_interpreter.dll:_inExecFunction(0, 0, 0x00df79a4, 0x1abcad90) + 38 bytes
+  [16] m_interpreter.dll:_inMMexExecute(586, 0x1abcad90, 0, 0) + 533 bytes
+  [17] m_interpreter.dll:_inCallFcnFromReference(0x00df7d00, 0x7a74466c "†gB", 0x1ab935a8, 0x66666666) + 213 bytes
+  [18] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(1, 10, 0, 0x01327858) + 4242 bytes
+  [19] m_interpreter.dll:_inInterPcode(1, 0x00df7dd4, 0, 0x1ab935a8) + 193 bytes
+  [20] m_interpreter.dll:_inExecCompScript(0x1ab935a8, 0x1ab935a8, 0x00df83e0, 0x00df86ac) + 991 bytes
+  [21] m_interpreter.dll:bool __cdecl inRunMP(int,struct mxArray_tag * *,int,struct mxArray_tag * *,struct word *,bool)(0, 0x00df83e0, 0, 0x00df86e8) + 106 bytes
+  [22] m_interpreter.dll:void __cdecl inExecMFile(int,int,struct mxArray_tag * * const,struct MATLAB_Function_tag *)(0, 0, 0x00df86e8, 0x1ab935a8) + 70 bytes
+  [23] m_interpreter.dll:_inExecFunction(0, 0, 0x00df86e8, 0x1ab935a8) + 38 bytes
+  [24] m_interpreter.dll:_inMMexExecute(582, 0x1ab935a8, 0, 0) + 533 bytes
+  [25] m_interpreter.dll:enum opcodes __cdecl inMMex(char const *,int,int,int,int *,int *)(0x1ac9488c "bisurf", 582, 0, 0) + 94 bytes
+  [26] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(0, 0, 0, 0x01333948) + 2143 bytes
+  [27] m_interpreter.dll:_inInterPcode(0, 0x00df8c68, 0, 0) + 193 bytes
+  [28] m_interpreter.dll:enum inExecutionStatus __cdecl in_local_call_eval_function(int *,struct _m_parser_interface *,struct _pcodeheader *,int *,struct mxArray_tag * * const,enum inDebugCheck)(0, 0x7a87fa78, 0x00df8c68, 0x00df8d0c) + 174 bytes
+  [29] m_interpreter.dll:_inEvalStringWithIsVarFcn(0x0129e240 "bisurf\n", 6, 0, 0) + 531 bytes
+  [30] m_interpreter.dll:_inEvalString(0x0129e240 "bisurf\n", 6, 0, 0) + 50 bytes
+  [31] m_interpreter.dll:_inFullEvalFcn(0, 0x00df8d98, 1, 0x00df8e60) + 264 bytes
+  [32] m_interpreter.dll:_inExecuteInternalFcn(350, 1, 0, 0) + 1183 bytes
+  [33] m_interpreter.dll:enum opcodes __cdecl inIntFcn(enum opcodes,int,int,int)(77, 0x0100015e, 0, 1) + 90 bytes
+  [34] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(0, 0, 0, 0x01323328) + 2554 bytes
+  [35] m_interpreter.dll:_inInterPcode(0, 0x00df95d8, 0, 0) + 193 bytes
+  [36] m_interpreter.dll:enum inExecutionStatus __cdecl in_local_call_eval_function(int *,struct _m_parser_interface *,struct _pcodeheader *,int *,struct mxArray_tag * * const,enum inDebugCheck)(0, 0x7a87fa78, 0x00df95d8, 0x00df967c) + 174 bytes
+  [37] m_interpreter.dll:_inEvalStringWithIsVarFcn(0x013311b8 "eval(LF_Alg)", 12, 0, 0) + 531 bytes
+  [38] m_interpreter.dll:_inEvalString(0x013311b8 "eval(LF_Alg)", 12, 0, 0) + 50 bytes
+  [39] m_interpreter.dll:_inEvalExpInWS(0x013311b8 "eval(LF_Alg)", 0, 0, 0x00df985c) + 106 bytes
+  [40] gui.dll:public: bool __thiscall MCallback::execute(struct mxArray_tag *,struct mxArray_tag *)const (0x1aca0218, 0x1ac9c000, 0x00df98b4 "‰òﬂ", 0x7a09853f) + 815 bytes
+  [41] gui.dll:_ExecuteMCallback(0x013f03d0, 0x1aca0218, 0x1ac9c000, 0) + 19 bytes
+  [42] hg.dll:enum inExecutionStatus __cdecl goCallEventCallback(struct GObject_tag *,class MCallback *,char const *,void (__cdecl*)(struct GObject_tag *,void *),void *,void (__cdecl*)(struct GObject_tag *,void *))(0x008ab920, 4, 0x7a0c3ae0 "Callback", 0x013f03d0) + 319 bytes
+  [43] hg.dll:_goCallCallback(0x0a8ab920, 0x013f03d0, 0x7a0c3ae0 "Callback", 0x7a08a2e0) + 118 bytes
+  [44] hg.dll:_goControlActivated(0x0a8ab920, 132074, 0x1acb8e60, 0x00df9c5c) + 99 bytes
+  [45] uiw.dll:struct GObject_tag * __cdecl activate_control(struct HWND__ *,struct winSysControlData_tag *)(132074, 0x1acb8e60, 2, 0x01462f48) + 159 bytes
+  [46] uiw.dll:void __cdecl ImageButtonPushed(struct HWND__ *)(132074, 132074, 0x01462f48, 0) + 77 bytes
+  [47] uiw.dll:long __stdcall ImageButtonHandler(struct HWND__ *,unsigned int,unsigned int,long)(132074, 2, 0, 0) + 111 bytes
+  [48] uiw.dll:_ImageButtonProc@16(132074, 514, 0, 720921) + 2439 bytes
+  [49] USER32.dll:0x77d43a50(0x7a50fb10, 132074, 514, 0)
+  [50] USER32.dll:0x77d43b1f(0, 0x7a50fb10, 132074, 514)
+  [51] USER32.dll:0x77d43d79(0x00df9c18, 1, 0x7a514560, 0x00df9c18)
+  [52] USER32.dll:0x77d44374(0x00df9c18, 0x00df9cf0 "†gB", 0x1aa0a050, 0x1aa0a050)
+  [53] uiw.dll:_getCommand(0x1aa0a088, 4096, 255, 0x1aa34ee0) + 564 bytes
+  [54] matlab.exe:_ioReadLine(255, 0x77c5ac80 "`◊≈w", 0x1aa34ee0, 4096) + 302 bytes
+  [55] matlab.exe:void __cdecl mnGetFullLine(char * *,unsigned int *,unsigned int *,int)(0x00dfdd5c, 0x00dfdd58, 0x00dfdd54, 255) + 55 bytes
+  [56] matlab.exe:_mnGetCommandLineBuffer(255, 0, 0, 1) + 95 bytes
+  [57] matlab.exe:_mnParser(0x70a9f1ab, 271244, 0, 48) + 955 bytes
+  [58] matlab.exe:_WinMain@16(0x00400000 "MZê", 0, 271244, 1) + 3872 bytes
+  [59] matlab.exe:_WinMainCRTStartup(0x70a9f1ab, 0x80000002, 0x7ffdf000, 0xf102ecf0) + 308 bytes
+  [60] kernel32.dll:0x77e814c7(0x0047172c, 0, 0, 1249438)
+
+Please follow these steps in reporting this problem to The MathWorks so
+that we have the best chance of correcting it:
+
+  1. Send this crash report to segv@mathworks.com for automated analysis.
+     For your convenience, this information has been recorded in:
+       C:\DOCUME~1\Harry\LOCALS~1\Temp\matlab_crash_dump.3408
+
+  2. Also, if the problem is reproducible, send the crash report to
+     support@mathworks.com along with:
+       - A specific list of steps that will reproduce the problem
+       - Any M, MEX, MDL or other files required to reproduce the problem
+       - Any error messages displayed prior to this crash report
+     A technical support engineer will contact you with further information.
+
+Thank you for your assistance.  Please save your workspace and restart
+MATLAB before continuing your work.
+
+Error in ==> C:\Projects\Software\VSTv2\vst1\pccomp.m
+On line 26  ==>             [f,J]=eval([CurrentSystem,'(data,x,[0;param],v)']);
+
+Found corrupted block 5524 in table 2. (invalid table index). 
+
+Found corrupted block 5565 in table 2. (invalid table index). 
+
+Found corrupted block 918 in table 8. (invalid table index). 
+
+Found corrupted block 931 in table 8. (invalid table index). 
+
+
+Checked all 14 cache memory tables. Found 2 corrupted tables.
+
+------------------------------------------------------------------------
+             Assertion detected at Wed Mar 10 18:10:40 2004
+------------------------------------------------------------------------
+
+Assertion failed: Forced Assertion at line 1160 of file ".\mwmem.c".
+Cache consistency error: Table index out of range
+
+
+Configuration:
+  MATLAB Version:   6.5.0.180913a (R13)
+  Operating System: Microsoft Windows XP
+  Window System:    Version 5.1 (Build 2600: Service Pack 1)
+  Processor ID:     x86 Family 6 Model 9 Stepping 5, GenuineIntel
+  Virtual Machine:  Java 1.3.1_01 with Sun Microsystems Inc. Java HotSpot(TM) Client VM
+    (mixed mode)
+
+Stack Trace:
+  [0] matlab.exe:_mnSignalHandler(0xffffffff, 0, 0, 1) + 592 bytes
+  [1] matlab.exe:void __cdecl ThrowAssertion(void)(0xffffcd10, 103, 0x65737341, 0x6f697472) + 162 bytes
+  [2] matlab.exe:void __cdecl MATLABAssertFcn(char const *,char const *,int,char const *)(0x7a741708 ": Forced Assertion", 0x7a74100c ".\mwmem.c", 1160, 0x7a741904 "Cache consistency error: Table i..") + 131 bytes
+  [3] libut.dll:_ut_assertstr(0x7a741708 ": Forced Assertion", 0x7a74100c ".\mwmem.c", 1160, 0x7a741904 "Cache consistency error: Table i..") + 25 bytes
+  [4] libut.dll:_mw_free(0x1abcdf10, 2, 0x1acc4920, 0x00df6f8c "úoﬂ") + 218 bytes
+  [5] libut.dll:_utFree(0x1abcdf10, 0, 0x1acc4920, 0x00df6f9c "¥oﬂ") + 25 bytes
+  [6] libmx.dll:_mxDestroyArrayContents(0x1acc4920, 0x0a6f04ac, 0x00df6fb4 "–oﬂ", 0x7b128d6e) + 209 bytes
+  [7] libmx.dll:_mxDestroyArray(0x1acc4920, 0x7a74466c "†gB", 500, 0x1abcad90) + 50 bytes
+  [8] libmx.dll:_ExitArrayListContextFcn(2, 0, 0, 0) + 94 bytes
+  [9] libmx.dll:_mxExitArrayListContext(2, 0, 0, 0x01403001) + 26 bytes
+  [10] m_interpreter.dll:_inExecCompScript(0x1abcad90, 0x1abcad90, 0x00df769c, 0x00df7968) + 1148 bytes
+  [11] m_interpreter.dll:bool __cdecl inRunMP(int,struct mxArray_tag * *,int,struct mxArray_tag * *,struct word *,bool)(0, 0x00df769c, 0, 0x00df79a4) + 106 bytes
+  [12] m_interpreter.dll:void __cdecl inExecMFile(int,int,struct mxArray_tag * * const,struct MATLAB_Function_tag *)(0, 0, 0x00df79a4, 0x1abcad90) + 70 bytes
+  [13] m_interpreter.dll:_inExecFunction(0, 0, 0x00df79a4, 0x1abcad90) + 38 bytes
+  [14] m_interpreter.dll:_inMMexExecute(586, 0x1abcad90, 0, 0) + 533 bytes
+  [15] m_interpreter.dll:_inCallFcnFromReference(0x00df7d00, 0x7a74466c "†gB", 0x1ab935a8, 0x66666666) + 213 bytes
+  [16] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(1, 10, 0, 0x01327858) + 4242 bytes
+  [17] m_interpreter.dll:_inInterPcode(1, 0x00df7dd4, 0, 0x1ab935a8) + 193 bytes
+  [18] m_interpreter.dll:_inExecCompScript(0x1ab935a8, 0x1ab935a8, 0x00df83e0, 0x00df86ac) + 991 bytes
+  [19] m_interpreter.dll:bool __cdecl inRunMP(int,struct mxArray_tag * *,int,struct mxArray_tag * *,struct word *,bool)(0, 0x00df83e0, 0, 0x00df86e8) + 106 bytes
+  [20] m_interpreter.dll:void __cdecl inExecMFile(int,int,struct mxArray_tag * * const,struct MATLAB_Function_tag *)(0, 0, 0x00df86e8, 0x1ab935a8) + 70 bytes
+  [21] m_interpreter.dll:_inExecFunction(0, 0, 0x00df86e8, 0x1ab935a8) + 38 bytes
+  [22] m_interpreter.dll:_inMMexExecute(582, 0x1ab935a8, 0, 0) + 533 bytes
+  [23] m_interpreter.dll:enum opcodes __cdecl inMMex(char const *,int,int,int,int *,int *)(0x1ac9488c "bisurf", 582, 0, 0) + 94 bytes
+  [24] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(0, 0, 0, 0x01333948) + 2143 bytes
+  [25] m_interpreter.dll:_inInterPcode(0, 0x00df8c68, 0, 0) + 193 bytes
+  [26] m_interpreter.dll:enum inExecutionStatus __cdecl in_local_call_eval_function(int *,struct _m_parser_interface *,struct _pcodeheader *,int *,struct mxArray_tag * * const,enum inDebugCheck)(0, 0x7a87fa78, 0x00df8c68, 0x00df8d0c) + 174 bytes
+  [27] m_interpreter.dll:_inEvalStringWithIsVarFcn(0x0129e240 "bisurf\n", 6, 0, 0) + 531 bytes
+  [28] m_interpreter.dll:_inEvalString(0x0129e240 "bisurf\n", 6, 0, 0) + 50 bytes
+  [29] m_interpreter.dll:_inFullEvalFcn(0, 0x00df8d98, 1, 0x00df8e60) + 264 bytes
+  [30] m_interpreter.dll:_inExecuteInternalFcn(350, 1, 0, 0) + 1183 bytes
+  [31] m_interpreter.dll:enum opcodes __cdecl inIntFcn(enum opcodes,int,int,int)(77, 0x0100015e, 0, 1) + 90 bytes
+  [32] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(0, 0, 0, 0x01323328) + 2554 bytes
+  [33] m_interpreter.dll:_inInterPcode(0, 0x00df95d8, 0, 0) + 193 bytes
+  [34] m_interpreter.dll:enum inExecutionStatus __cdecl in_local_call_eval_function(int *,struct _m_parser_interface *,struct _pcodeheader *,int *,struct mxArray_tag * * const,enum inDebugCheck)(0, 0x7a87fa78, 0x00df95d8, 0x00df967c) + 174 bytes
+  [35] m_interpreter.dll:_inEvalStringWithIsVarFcn(0x013311b8 "eval(LF_Alg)", 12, 0, 0) + 531 bytes
+  [36] m_interpreter.dll:_inEvalString(0x013311b8 "eval(LF_Alg)", 12, 0, 0) + 50 bytes
+  [37] m_interpreter.dll:_inEvalExpInWS(0x013311b8 "eval(LF_Alg)", 0, 0, 0x00df985c) + 106 bytes
+  [38] gui.dll:public: bool __thiscall MCallback::execute(struct mxArray_tag *,struct mxArray_tag *)const (0x1aca0218, 0x1ac9c000, 0x00df98b4 "‰òﬂ", 0x7a09853f) + 815 bytes
+  [39] gui.dll:_ExecuteMCallback(0x013f03d0, 0x1aca0218, 0x1ac9c000, 0) + 19 bytes
+  [40] hg.dll:enum inExecutionStatus __cdecl goCallEventCallback(struct GObject_tag *,class MCallback *,char const *,void (__cdecl*)(struct GObject_tag *,void *),void *,void (__cdecl*)(struct GObject_tag *,void *))(0x008ab920, 4, 0x7a0c3ae0 "Callback", 0x013f03d0) + 319 bytes
+  [41] hg.dll:_goCallCallback(0x0a8ab920, 0x013f03d0, 0x7a0c3ae0 "Callback", 0x7a08a2e0) + 118 bytes
+  [42] hg.dll:_goControlActivated(0x0a8ab920, 132074, 0x1acb8e60, 0x00df9c5c) + 99 bytes
+  [43] uiw.dll:struct GObject_tag * __cdecl activate_control(struct HWND__ *,struct winSysControlData_tag *)(132074, 0x1acb8e60, 2, 0x01462f48) + 159 bytes
+  [44] uiw.dll:void __cdecl ImageButtonPushed(struct HWND__ *)(132074, 132074, 0x01462f48, 0) + 77 bytes
+  [45] uiw.dll:long __stdcall ImageButtonHandler(struct HWND__ *,unsigned int,unsigned int,long)(132074, 2, 0, 0) + 111 bytes
+  [46] uiw.dll:_ImageButtonProc@16(132074, 514, 0, 720921) + 2439 bytes
+  [47] USER32.dll:0x77d43a50(0x7a50fb10, 132074, 514, 0)
+  [48] USER32.dll:0x77d43b1f(0, 0x7a50fb10, 132074, 514)
+  [49] USER32.dll:0x77d43d79(0x00df9c18, 1, 0x7a514560, 0x00df9c18)
+  [50] USER32.dll:0x77d44374(0x00df9c18, 0x00df9cf0 "†gB", 0x1aa0a050, 0x1aa0a050)
+  [51] uiw.dll:_getCommand(0x1aa0a088, 4096, 255, 0x1aa34ee0) + 564 bytes
+  [52] matlab.exe:_ioReadLine(255, 0x77c5ac80 "`◊≈w", 0x1aa34ee0, 4096) + 302 bytes
+  [53] matlab.exe:void __cdecl mnGetFullLine(char * *,unsigned int *,unsigned int *,int)(0x00dfdd5c, 0x00dfdd58, 0x00dfdd54, 255) + 55 bytes
+  [54] matlab.exe:_mnGetCommandLineBuffer(255, 0, 0, 1) + 95 bytes
+  [55] matlab.exe:_mnParser(0x70a9f1ab, 271244, 0, 48) + 955 bytes
+  [56] matlab.exe:_WinMain@16(0x00400000 "MZê", 0, 271244, 1) + 3872 bytes
+  [57] matlab.exe:_WinMainCRTStartup(0x70a9f1ab, 0x80000002, 0x7ffdf000, 0xf102ecf0) + 308 bytes
+  [58] kernel32.dll:0x77e814c7(0x0047172c, 0, 0, 1249438)
+
+Please follow these steps in reporting this problem to The MathWorks so
+that we have the best chance of correcting it:
+
+  1. Send this crash report to segv@mathworks.com for automated analysis.
+     For your convenience, this information has been recorded in:
+       C:\DOCUME~1\Harry\LOCALS~1\Temp\matlab_crash_dump.3408
+
+  2. Also, if the problem is reproducible, send the crash report to
+     support@mathworks.com along with:
+       - A specific list of steps that will reproduce the problem
+       - Any M, MEX, MDL or other files required to reproduce the problem
+       - Any error messages displayed prior to this crash report
+     A technical support engineer will contact you with further information.
+
+Thank you for your assistance.  Please save your workspace and restart
+MATLAB before continuing your work.
+
+Error in ==> C:\Projects\Software\VSTv2\vst1\bisurf.m
+On line 26  ==> 
+
+Found corrupted block 5524 in table 2. (invalid table index). 
+
+Found corrupted block 5565 in table 2. (invalid table index). 
+
+Found corrupted block 918 in table 8. (invalid table index). 
+
+Found corrupted block 931 in table 8. (invalid table index). 
+
+
+Checked all 14 cache memory tables. Found 2 corrupted tables.
+
+------------------------------------------------------------------------
+             Assertion detected at Wed Mar 10 18:10:40 2004
+------------------------------------------------------------------------
+
+Assertion failed: Forced Assertion at line 1160 of file ".\mwmem.c".
+Cache consistency error: Table index out of range
+
+
+Configuration:
+  MATLAB Version:   6.5.0.180913a (R13)
+  Operating System: Microsoft Windows XP
+  Window System:    Version 5.1 (Build 2600: Service Pack 1)
+  Processor ID:     x86 Family 6 Model 9 Stepping 5, GenuineIntel
+  Virtual Machine:  Java 1.3.1_01 with Sun Microsystems Inc. Java HotSpot(TM) Client VM
+    (mixed mode)
+
+Stack Trace:
+  [0] matlab.exe:_mnSignalHandler(0xffffffff, 0, 0, 1) + 592 bytes
+  [1] matlab.exe:void __cdecl ThrowAssertion(void)(18460, 103, 0x65737341, 0x6f697472) + 162 bytes
+  [2] matlab.exe:void __cdecl MATLABAssertFcn(char const *,char const *,int,char const *)(0x7a741708 ": Forced Assertion", 0x7a74100c ".\mwmem.c", 1160, 0x7a741904 "Cache consistency error: Table i..") + 131 bytes
+  [3] libut.dll:_ut_assertstr(0x7a741708 ": Forced Assertion", 0x7a74100c ".\mwmem.c", 1160, 0x7a741904 "Cache consistency error: Table i..") + 25 bytes
+  [4] libut.dll:_mw_free(0x013f5f38, 2, 0x1acc4c38, 0x00df7cd0 "‡|ﬂ") + 218 bytes
+  [5] libut.dll:_utFree(0x013f5f38, 0, 0x1acc4c38, 0x00df7ce0 "¯|ﬂ") + 25 bytes
+  [6] libmx.dll:_mxDestroyArrayContents(0x1acc4c38, 0x0a6f04a8, 0x00df7cf8, 0x7b128d6e) + 209 bytes
+  [7] libmx.dll:_mxDestroyArray(0x1acc4c38, 0x7a74466c "†gB", 500, 0x1ab935a8) + 50 bytes
+  [8] libmx.dll:_ExitArrayListContextFcn(2, 0, 0, 0) + 94 bytes
+  [9] libmx.dll:_mxExitArrayListContext(2, 0, 0, 0x01403001) + 26 bytes
+  [10] m_interpreter.dll:_inExecCompScript(0x1ab935a8, 0x1ab935a8, 0x00df83e0, 0x00df86ac) + 1148 bytes
+  [11] m_interpreter.dll:bool __cdecl inRunMP(int,struct mxArray_tag * *,int,struct mxArray_tag * *,struct word *,bool)(0, 0x00df83e0, 0, 0x00df86e8) + 106 bytes
+  [12] m_interpreter.dll:void __cdecl inExecMFile(int,int,struct mxArray_tag * * const,struct MATLAB_Function_tag *)(0, 0, 0x00df86e8, 0x1ab935a8) + 70 bytes
+  [13] m_interpreter.dll:_inExecFunction(0, 0, 0x00df86e8, 0x1ab935a8) + 38 bytes
+  [14] m_interpreter.dll:_inMMexExecute(582, 0x1ab935a8, 0, 0) + 533 bytes
+  [15] m_interpreter.dll:enum opcodes __cdecl inMMex(char const *,int,int,int,int *,int *)(0x1ac9488c "bisurf", 582, 0, 0) + 94 bytes
+  [16] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(0, 0, 0, 0x01333948) + 2143 bytes
+  [17] m_interpreter.dll:_inInterPcode(0, 0x00df8c68, 0, 0) + 193 bytes
+  [18] m_interpreter.dll:enum inExecutionStatus __cdecl in_local_call_eval_function(int *,struct _m_parser_interface *,struct _pcodeheader *,int *,struct mxArray_tag * * const,enum inDebugCheck)(0, 0x7a87fa78, 0x00df8c68, 0x00df8d0c) + 174 bytes
+  [19] m_interpreter.dll:_inEvalStringWithIsVarFcn(0x0129e240 "bisurf\n", 6, 0, 0) + 531 bytes
+  [20] m_interpreter.dll:_inEvalString(0x0129e240 "bisurf\n", 6, 0, 0) + 50 bytes
+  [21] m_interpreter.dll:_inFullEvalFcn(0, 0x00df8d98, 1, 0x00df8e60) + 264 bytes
+  [22] m_interpreter.dll:_inExecuteInternalFcn(350, 1, 0, 0) + 1183 bytes
+  [23] m_interpreter.dll:enum opcodes __cdecl inIntFcn(enum opcodes,int,int,int)(77, 0x0100015e, 0, 1) + 90 bytes
+  [24] m_interpreter.dll:int __cdecl inInterp(enum inDebugCheck,int,int,struct inPcodeNest_tag volatile *)(0, 0, 0, 0x01323328) + 2554 bytes
+  [25] m_interpreter.dll:_inInterPcode(0, 0x00df95d8, 0, 0) + 193 bytes
+  [26] m_interpreter.dll:enum inExecutionStatus __cdecl in_local_call_eval_function(int *,struct _m_parser_interface *,struct _pcodeheader *,int *,struct mxArray_tag * * const,enum inDebugCheck)(0, 0x7a87fa78, 0x00df95d8, 0x00df967c) + 174 bytes
+  [27] m_interpreter.dll:_inEvalStringWithIsVarFcn(0x013311b8 "eval(LF_Alg)", 12, 0, 0) + 531 bytes
+  [28] m_interpreter.dll:_inEvalString(0x013311b8 "eval(LF_Alg)", 12, 0, 0) + 50 bytes
+  [29] m_interpreter.dll:_inEvalExpInWS(0x013311b8 "eval(LF_Alg)", 0, 0, 0x00df985c) + 106 bytes
+  [30] gui.dll:public: bool __thiscall MCallback::execute(struct mxArray_tag *,struct mxArray_tag *)const (0x1aca0218, 0x1ac9c000, 0x00df98b4 "‰òﬂ", 0x7a09853f) + 815 bytes
+  [31] gui.dll:_ExecuteMCallback(0x013f03d0, 0x1aca0218, 0x1ac9c000, 0) + 19 bytes
+  [32] hg.dll:enum inExecutionStatus __cdecl goCallEventCallback(struct GObject_tag *,class MCallback *,char const *,void (__cdecl*)(struct GObject_tag *,void *),void *,void (__cdecl*)(struct GObject_tag *,void *))(0x008ab920, 4, 0x7a0c3ae0 "Callback", 0x013f03d0) + 319 bytes
+  [33] hg.dll:_goCallCallback(0x0a8ab920, 0x013f03d0, 0x7a0c3ae0 "Callback", 0x7a08a2e0) + 118 bytes
+  [34] hg.dll:_goControlActivated(0x0a8ab920, 132074, 0x1acb8e60, 0x00df9c5c) + 99 bytes
+  [35] uiw.dll:struct GObject_tag * __cdecl activate_control(struct HWND__ *,struct winSysControlData_tag *)(132074, 0x1acb8e60, 2, 0x01462f48) + 159 bytes
+  [36] uiw.dll:void __cdecl ImageButtonPushed(struct HWND__ *)(132074, 132074, 0x01462f48, 0) + 77 bytes
+  [37] uiw.dll:long __stdcall ImageButtonHandler(struct HWND__ *,unsigned int,unsigned int,long)(132074, 2, 0, 0) + 111 bytes
+  [38] uiw.dll:_ImageButtonProc@16(132074, 514, 0, 720921) + 2439 bytes
+  [39] USER32.dll:0x77d43a50(0x7a50fb10, 132074, 514, 0)
+  [40] USER32.dll:0x77d43b1f(0, 0x7a50fb10, 132074, 514)
+  [41] USER32.dll:0x77d43d79(0x00df9c18, 1, 0x7a514560, 0x00df9c18)
+  [42] USER32.dll:0x77d44374(0x00df9c18, 0x00df9cf0 "†gB", 0x1aa0a050, 0x1aa0a050)
+  [43] uiw.dll:_getCommand(0x1aa0a088, 4096, 255, 0x1aa34ee0) + 564 bytes
+  [44] matlab.exe:_ioReadLine(255, 0x77c5ac80 "`◊≈w", 0x1aa34ee0, 4096) + 302 bytes
+  [45] matlab.exe:void __cdecl mnGetFullLine(char * *,unsigned int *,unsigned int *,int)(0x00dfdd5c, 0x00dfdd58, 0x00dfdd54, 255) + 55 bytes
+  [46] matlab.exe:_mnGetCommandLineBuffer(255, 0, 0, 1) + 95 bytes
+  [47] matlab.exe:_mnParser(0x70a9f1ab, 271244, 0, 48) + 955 bytes
+  [48] matlab.exe:_WinMain@16(0x00400000 "MZê", 0, 271244, 1) + 3872 bytes
+  [49] matlab.exe:_WinMainCRTStartup(0x70a9f1ab, 0x80000002, 0x7ffdf000, 0xf102ecf0) + 308 bytes
+  [50] kernel32.dll:0x77e814c7(0x0047172c, 0, 0, 1249438)
+
+Please follow these steps in reporting this problem to The MathWorks so
+that we have the best chance of correcting it:
+
+  1. Send this crash report to segv@mathworks.com for automated analysis.
+     For your convenience, this information has been recorded in:
+       C:\DOCUME~1\Harry\LOCALS~1\Temp\matlab_crash_dump.3408
+
+  2. Also, if the problem is reproducible, send the crash report to
+     support@mathworks.com along with:
+       - A specific list of steps that will reproduce the problem
+       - Any M, MEX, MDL or other files required to reproduce the problem
+       - Any error messages displayed prior to this crash report
+     A technical support engineer will contact you with further information.
+
+Thank you for your assistance.  Please save your workspace and restart
+MATLAB before continuing your wor

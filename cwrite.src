@@ -1,0 +1,10 @@
+`C/write`:=proc(e)
+   local l, d;
+   global buffer, `C/buffer`;
+   options `Copyright 1993 by Waterloo Maple Software`;
+      l:=length(e);
+      d:=length(`C/buffer`)+1-79999;
+      if d<=0 then `C/buffer`:=cat(`C/buffer`,e); RETURN() fi;
+      lprint(`C/buffer`);
+      `C/buffer`:=e
+   end

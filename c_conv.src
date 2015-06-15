@@ -1,0 +1,9 @@
+c_conv:=proc(n,k)
+# converts a sequence of n elements starting with the k+1st 
+# in the list Fopt of Maple form equations to C form,
+global Fopt;
+	
+C([seq(Fopt[ii],ii=k+1..k+n)]):
+
+RETURN(1)
+end: 

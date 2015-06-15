@@ -1,0 +1,52 @@
+mclas_pc:=proc(zrow,zcol)
+local f1_dim,f2_dim,f_dim,j_rowdim,j_coldim,theta,P,Q,X,Data,V,j2,
+     DataSeq,Param,State,Parameters,StateRules,ParameterRules,DataRules,
+         k_list,n_list,n,k;
+global f1,f2,F,j0,m_pv,s_pq;
+# **************** Set up arrays
+
+if m_pv+s_pq=0 then 
+        F:=f1:
+        f_dim:=rowdim(F):
+        f1_dim:=rowdim(f1)-1:
+        f2_dim:=0:
+else
+        F:=stackmatrix(f1,f2):
+        f_dim:=rowdim(F):
+        f1_dim:=rowdim(f1)-1:
+        f2_dim:=rowdim(f2):
+fi:
+f1:='f1':
+f2:='f2':
+theta:=seq(th[k],k=1..f1_dim-f2_dim):
+P:=seq(p[k],k=1..f1_dim+1):
+Q:=seq(q[k],k=f1_dim-f2_dim+2..f1_dim+1):
+X:=seq(x[k],k=0..f1_dim+f2_dim-1):
+Data:=seq(data[k],k=0..f1_dim+1-f2_dim+2*rowdim(zrow)-1):
+Param:=seq(param[k],k=0..f1_dim+1+f2_dim-1):
+# ***************** Set up replacement rules
+State:=theta,seq(op([e[k+1],th[k]]),k=f1_dim-f2_dim+1..f1_dim):
+StateRules:={seq(State[k]=X[k-1],k=1..nops([X]))}:                        # modified 
+Parameters:=P,Q:
+ParameterRules:={seq(Parameters[k]=Param[k-1],k=1..nops([Parameters]))}:  # mod
+DataSeq:=seq(e[k],k=1..f1_dim+1-f2_dim):
+k_list:=convert(col(zrow,1),list):
+n_list:=convert(col(zcol,1),list):
+for n from 1 to rowdim(zrow) do
+        DataSeq:=DataSeq,b[k_list[n],n_list[n]]:
+od:
+for n from 1 to rowdim(zrow) do
+        DataSeq:=DataSeq,g[k_list[n],n_list[n]]:
+od:
+DataRules:={seq(DataSeq[k]=Data[k],k=1..nops([Data]))}:
+F:=subs(StateRules,evalm(F)): 
+F:=subs(ParameterRules,evalm(F)): 
+F:=subs(DataRules,evalm(F)):
+j0:=jacobian(col(F,1),[X]):
+# ************************ Augment J with 2nd derivatives
+# v:=array(1..coldim(j0)):
+V:=convert([seq(v[k],k=0..f1_dim+f2_dim-1)],vector):
+j2:=jacobian(evalm(j0&*V),[X]):
+j0:=augment(j0,j2):
+RETURN(1)
+end:

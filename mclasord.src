@@ -1,0 +1,14 @@
+mclasord:=proc(ExpLimit)
+local f_dim,j_rowdim,j_coldim;
+global F,j0;
+# ************* Set up dimensions
+f_dim:=rowdim(F):
+#print(am1);
+j_rowdim:=rowdim(j0):
+#print(am2);
+j_coldim:=coldim(j0):
+# ************* Form Re-ordered Equations ***************
+F:=augment(F,j0):
+j0:='j0':
+RETURN(eval(convert([f_dim,j_rowdim,j_coldim],vector)))
+end:

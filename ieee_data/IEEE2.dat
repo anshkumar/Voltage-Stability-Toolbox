@@ -1,0 +1,17 @@
+ 04/25/96 CHL                  100.0  IEEE 2 Bus Test Case
+BUS DATA FOLLOWS                            2 ITEMS
+   1 Bus 1     HV  1  1  3 1.000    0.0      0.0      0.0     80.0    40.0     0.0  1.000     0.0     0.0   0.0    0.0        0
+   2 Bus 2     HV  1  1  0 1.000    0.0     70.0     30.0      0.0     0.0     0.0  1.000     0.0     0.0   0.0    0.0        0
+-999
+BRANCH DATA FOLLOWS                         1 ITEMS
+   1    2  1  1 1 0  0.05000   0.35000     0.0000     0     0     0    0 0  0.0       0.0 0.0    0.0     0.0    0.0   0.0
+--999
+LOSS ZONES FOLLOWS                     1 ITEMS
+  1 IEEE 2 BUS
+-99
+INTERCHANGE DATA FOLLOWS                 1 ITEMS
+ 1    2 Bus 2     HV    0.0  999.99  IEEE2  IEEE 2 Bus Test Case
+-9
+TIE LINES FOLLOWS                     0 ITEMS
+-999
+END OF DATA

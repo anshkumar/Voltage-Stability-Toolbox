@@ -1,0 +1,48 @@
+mp_c_eq:=proc(dummy_var)
+local f_dim,j_rowdim,j_coldim,AA,BB,f,eqlhs,num_v,v_name,temp;
+# ************* Set up dimensions
+f_dim:=rowdim(F):
+j_rowdim:=rowdim(j0):
+j_coldim:=coldim(j0):
+# ************* Form Optimized Equations ***************#
+if n_gen+m_pv>1 then
+	for n from 1 to n_gen-1+m_pv do
+		F:=stack(F,convert(col(j0,n),matrix)):
+	od:
+fi:
+for n from n_gen-1+m_pv+2 by 2 to n_gen-1+m_pv+2*s_pq do
+	 F:=stack(F,convert(col(j0,n),matrix)):
+od:
+for n from n_gen-1+m_pv+2 by 2 to n_gen-1+m_pv+2*s_pq do
+	 F:=stack(F,convert(col(j0,n-1),matrix)):
+od:
+if j_coldim>n_gen-1+m_pv+2*s_pq then
+	for n from n_gen-1+m_pv+2*s_pq+1 to j_coldim do
+		F:=stack(F,convert(col(j0,n),matrix)):
+	od:
+fi:
+readlib(optimize):
+Fopt:=[optimize(F)]:
+F:='F':
+for k from 1 to f_dim do
+Fopt:=subs(F[k,1]=f[k-1],Fopt):
+od:
+for n from 1 to j_coldim do
+  for k from 1 to j_rowdim do
+  Fopt:=subs(F[k+f_dim+(n-1)*j_rowdim,1]=J[k+(n-1)*j_rowdim-1],Fopt):
+  od: 
+od:
+# ************* Make the temp variable list ***********#
+eqlhs:=map(lhs,Fopt):
+num_v:=nops(eqlhs):
+templist:=[]:
+for n from 1 to num_v do
+	v_name:=convert(eqlhs[n],string): 
+	if(substring(v_name,1..1)='t') then
+		temp:=v_name:
+		templist:=[op(templist),temp]:
+	fi:
+od:
+
+RETURN(eval(convert([f_dim,j_rowdim,j_coldim],vector)))
+end:

@@ -1,0 +1,56 @@
+mc_subop:=proc(ExpLimit,f_dim,j_rowdim,j_coldim)
+local eqlhs,num_v,v_name,temp,kk,nn,ii,
+      NumExpr,Remainder,Ftemp,k,n;
+global F,Fopt,templist;
+# ************* Set up dimensions
+# f_dim:=rowdim(F):
+# j_rowdim:=rowdim(j0):
+# j_coldim:=coldim(j0):
+
+# readlib(unassign):
+# unassign('j0'):
+# unassign('f1','f2'):
+
+# ************* Form Optimized Equations ***************
+
+if ExpLimit>0 then
+  readlib(optimize):
+  Ftemp:=[seq(f[k]=F[k,1],k=1..f_dim)]:
+  for n from 1 to j_coldim do
+        Ftemp:=[op(Ftemp),seq(J[k+(n-1)*j_rowdim]=F[k,n+1],k=1..j_rowdim)]:
+  od:
+  NumExpr:=f_dim+j_coldim*j_rowdim:
+  Remainder:=NumExpr:
+  Fopt:=[]:
+  while Remainder>0 do
+        kk:=NumExpr-Remainder:
+    nn:=min(ExpLimit,Remainder):
+        Fopt:=[op(Fopt),optimize([seq(Ftemp[kk+k],k=1..nn)])]:  
+        Remainder:=Remainder-ExpLimit:
+  od:
+  #Fopt:=[op(Fopt),optimize([seq(Ftemp[k],k=1..NumExpr)])]:
+else
+# ************* Form Fopt, optimization depth=0 case **********
+Fopt:=[seq(f[k]=F[k,1],k=1..f_dim)]:
+for n from 1 to j_coldim do
+        Fopt:=[op(Fopt),seq(J[k+(n-1)*j_rowdim]=F[k,n+1],k=1..j_rowdim)]:
+od:
+fi:
+F:='F':
+
+# ************* Make the temp variable list ***********
+eqlhs:=map(lhs,Fopt):
+num_v:=nops(eqlhs):
+templist:=[]:
+ii:=0:
+for n from 1 to num_v do
+        v_name:=convert(eqlhs[n],string): 
+        if(evalb(substring(v_name,1..1)= "t")) then
+                ii:=ii+1:
+                temp:=convert(v_name,symbol):
+                templist:=[op({op(templist)} union {temp})]:
+                #templist=augment(templist,[v_name]):
+        fi:
+od:
+RETURN(eval(convert([nops(Fopt),nops(templist),num_v,ii],vector)))
+end:
