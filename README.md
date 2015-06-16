@@ -41,7 +41,7 @@ Eigenvalue Analysis
 Select Model/Load to load the IEEE#_VST.dat  
 Select one of the IEEE#_VST.dat file from the data folder to load the data  
 Select Analysis/Load Flow/Standard NR  
-Select the corresponding IEEE#.dll file from the models folder  
+Select the corresponding IEEE#.mexw32 file from the models folder  
 This will bring the Load Flow Analysis window  
 Reset the states values (flat start)  
 Start the program to obtain load flow results   
@@ -53,7 +53,7 @@ State values are the voltage magnitudes and angles at each bus
 Select Model/Load  
 Select one of the IEEE#_VST.dat file in the data folder to load the data  
 Select Analyis/Static Bifurcation  
-Select the corresponding IEEE#.dll file in the models folder  
+Select the corresponding IEEE#.mexw32 file in the models folder  
 This will bring static bifurcation  simulation interface  
 Reset the sate values (flat start)  
 Set search direction to (-1) for load buses to increase the power demand  
@@ -67,7 +67,7 @@ Select any state variable from the slider to plot
 Select Model/Load  
 Select one of the IEEE#_VST.dat file in the data folder to load the data   
 Select Analyis/Dynamic Bifurcation  
-Select the corresponding IEEE#.dll file in the models folder  
+Select the corresponding IEEE#.mexw32 file in the models folder  
 This will bring dynamic bifurcation simulation interface  
 Reset the sate values (flat start)  
 Set search direction to (-1) for load buses to increase the power demand  
@@ -82,7 +82,7 @@ Select Model/Load
 Select one of the IEEE#_VST.dat file in the data folder to load the data  
 Run the dynamic bifurcation anlysis first to load the initial data for simulation  
 Select Analysis/Simulation  
-Select the corresponding IEEE#.dll file in the IEEE.c folder  
+Select the corresponding IEEE#.mexw32 file in the IEEE.c folder  
 This will bring time domain simulation window  
 Select the duration of the simulation  
 Choose the initial operating point for the simulation  
