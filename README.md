@@ -1,16 +1,19 @@
 # Voltage-Stability-Toolbox
 
-1. INTRODUCTION 
+1. INTRODUCTION
+
 Voltage instability and collapse have become an increasing concern in planning, operation, and control of electric power systems. In order to understand the phenomena and mechanics of voltage instability,a powerful and user-friendly analysis tool is very helpful. Voltage Stability Toolbox (VST) developed at the Center for Electric Power Engineering, Drexel University combines proven computational and analytical capabilities of bifurcation theory and symbolic mplementation and graphical representation capabilities of MATLAB and its Toolboxes. It can be used to analyze voltage stability problem and provide intuitive information for power system planning, operation, and control. 
 
  
 
 
 2. DISCLAIMER 
+
 Permission to use, copy, modify, and distribute this software and its documentation for NON-COMMERCIAL or COMMERCIAL purposes and without fee is hereby granted, provided that any use properly credits the authors, i.e. "Voltage Stability Toolbox courtesy of Center for Electric Power Engineering, Drexel University". The authors make no representations or warranties about the suitability of the software, either express or implied, including but not limited  to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. The authors shall not be liable for any damages suffered by license as a result of using, modifying or distributing this software or its derivatives. 
 
 
 3. GETTING STARTED 
+
 3.1 SOFTWARE AND SYSTEM REQUIREMENTS
 
 To use VST you need :
@@ -31,6 +34,7 @@ Run MATLAB (suppose Symbolic Toolbox has been installed too).
 In the MATLAB command window, typing vst_main will bring up the VST main window 
 
 4. ANALYSIS WITH VOLTAGE STABILITY TOOLBOX 
+
 The following analysis can be made with VST:
 
 Load Flow Analysis
