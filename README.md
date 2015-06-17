@@ -7,11 +7,10 @@ Voltage instability and collapse have become an increasing concern in planning, 
 Permission to use, copy, modify, and distribute this software and its documentation for NON-COMMERCIAL or COMMERCIAL purposes and without fee is hereby granted, provided that any use properly credits the authors, i.e. "Voltage Stability Toolbox courtesy of Center for Electric Power Engineering, Drexel University". The authors make no representations or warranties about the suitability of the software, either express or implied, including but not limited  to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. The authors shall not be liable for any damages suffered by license as a result of using, modifying or distributing this software or its derivatives. 
 
 
-3. GETTING STARTED  
-3.1 SOFTWARE AND SYSTEM REQUIREMENTS
+3. GETTING STARTED
 
-To use VST you need :
-
+3.1 SOFTWARE AND SYSTEM REQUIREMENTS  
+To use VST you need :  
 Matlab (2010a or above recommended)  
 Matlab Symbolic Toolbox (available from the MathWorks)  
 Voltage Stability Toolbox Files.  
@@ -19,8 +18,8 @@ Windows or *NIX
 
 3.2 INSTALLATION
 
-Download vst.zip to a directory where you want to install VST.   
-Unzip vst.zip. It will expand into all the M-files needed to run VST.  
+Download Voltage-Stability-Toolbox-master.zip to a directory where you want to install VST.   
+Unzip Voltage-Stability-Toolbox-master.zip. It will expand into all the M-files needed to run VST.  
 Two subdirectories will also be created. One is Model directory, which stores pre-compiled executable files for IEEE3,5,14 and 30 Bus systems.  
 Another is Data directory which stores IEEE common format load flow data files.  
 Copy all the M-files in the VST to a location in your Matlab path  
