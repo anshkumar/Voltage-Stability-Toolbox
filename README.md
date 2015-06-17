@@ -16,15 +16,14 @@ Matlab Symbolic Toolbox (available from the MathWorks)
 Voltage Stability Toolbox Files.  
 Windows or *NIX  
 
-3.2 INSTALLATION
-
+3.2 INSTALLATION  
 Download Voltage-Stability-Toolbox-master.zip to a directory where you want to install VST.   
 Unzip Voltage-Stability-Toolbox-master.zip. It will expand into all the M-files needed to run VST.  
 Two subdirectories will also be created. One is Model directory, which stores pre-compiled executable files for IEEE3,5,14 and 30 Bus systems.  
 Another is Data directory which stores IEEE common format load flow data files.  
 Copy all the M-files in the VST to a location in your Matlab path  
 Run MATLAB (suppose Symbolic Toolbox has been installed too).  
-In the MATLAB command window, typing vst_main will bring up the VST main window 
+In the MATLAB command window, typing vst_main will bring up the VST main window
 
 4. ANALYSIS WITH VOLTAGE STABILITY TOOLBOX  
 The following analysis can be made with VST:
@@ -35,8 +34,7 @@ Dynamic Bifurcation Analyis
 Time Domain Simulation  
 Eigenvalue Analysis  
 
-4.1 HOW TO RUN LOAD FLOW
-
+4.1 HOW TO RUN LOAD FLOW  
 Select Model/Load to load the IEEE#_VST.dat  
 Select one of the IEEE#_VST.dat file from the data folder to load the data  
 Select Analysis/Load Flow/Standard NR  
@@ -47,8 +45,7 @@ Start the program to obtain load flow results
 Parameter values are the net injections at each bus  
 State values are the voltage magnitudes and angles at each bus  
 
-4.2 HOW TO RUN STATIC BIFURCATION ANALYSIS
-
+4.2 HOW TO RUN STATIC BIFURCATION ANALYSIS  
 Select Model/Load  
 Select one of the IEEE#_VST.dat file in the data folder to load the data  
 Select Analyis/Static Bifurcation  
@@ -61,8 +58,7 @@ Start the program
 The output of this simulation is the bifurcation surface(nose curve)   
 Select any state variable from the slider to plot  
 
-4.3 HOW TO RUN DYNAMIC BIFURCATION ANALYSIS
-
+4.3 HOW TO RUN DYNAMIC BIFURCATION ANALYSIS  
 Select Model/Load  
 Select one of the IEEE#_VST.dat file in the data folder to load the data   
 Select Analyis/Dynamic Bifurcation  
@@ -75,8 +71,7 @@ Start the program
 The output of this simulation is the bifurcation surface(nose curve) showing  also the 
 unstable part of the nose curve  
 
-4.4 HOW TO RUNTIME DOMAIN DYNAMIC SIMULATION ANALYSIS
-
+4.4 HOW TO RUNTIME DOMAIN DYNAMIC SIMULATION ANALYSIS  
 Select Model/Load  
 Select one of the IEEE#_VST.dat file in the data folder to load the data  
 Run the dynamic bifurcation anlysis first to load the initial data for simulation  
@@ -88,7 +83,6 @@ Choose the initial operating point for the simulation
 Run the program by pushing the Start button  
 Select the generator variable to plot  
 
-4.5 HOW TO RUN EIGENVALUE ANALYSIS
-
+4.5 HOW TO RUN EIGENVALUE ANALYSIS  
 Run the dynamic bifurcation analysis  
 Obtain the eigenvalue location  
